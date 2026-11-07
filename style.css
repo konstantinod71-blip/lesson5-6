@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.club-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border-bottom: 1px solid #333;
+}
+
+.club-header h1 {
+  margin: 0;
+}
+
+.club-header nav {
+  display: flex;
+  gap: 16px;
+}
+
+.club-header a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+#about {
+  margin-bottom: 32px;
+}
+
+.schedule {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.schedule article {
+  flex-basis: 288px;
+  padding: 12px;
+  border: 1px solid #333;
+}
+
+
+.schedule h2 {
+  margin: 0 0 8px;
+}
+
+.schedule p {
+  margin: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border-top: 1px solid #333;
+}
+
+@media (max-width: 600px) {
+  .club-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .club-header nav {
+    flex-wrap: wrap;
+  }
+}

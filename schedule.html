@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Расписание</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .schedule {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      padding: 20px;
+    }
+
+    .schedule article {
+      flex-basis: 180px;
+      padding: 12px;
+      border: 1px solid #333;
+    }
+
+    .schedule h2 {
+      margin: 0 0 8px;
+    }
+
+    .schedule p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body id="top">
+  <section class="schedule">
+    <article>
+      <h2>Веб-дизайн</h2>
+      <p>Понедельник, 10:00</p>
+    </article>
+
+    <article>
+      <h2>Фотография</h2>
+      <p>Вторник, 12:00</p>
+    </article>
+
+    <article>
+      <h2>Робототехника</h2>
+      <p>Среда, 14:00</p>
+    </article>
+  </section>
+</body>
+</html>
