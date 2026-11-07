@@ -122,5 +122,105 @@ body {
   align-items: center;
   justify-content: center;
 }
+/* Только главная страница */
+.home-page,
+.home-page * {
+  box-sizing: border-box;
+}
+
+.home-page {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100svh;
+  padding: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-page .container {
+  width: 100%;
+  max-width: 960px;
+  min-width: 0;
+  margin: 0 auto;
+  padding: 32px 20px;
+  text-align: center;
+}
+
+.home-page h1 {
+  margin: 0 0 16px;
+  font-size: clamp(28px, 5vw, 44px);
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.home-page p {
+  margin: 0 0 24px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.home-page .menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.home-page .menu .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 1 1 200px;
+  max-width: 280px;
+  min-width: 0;
+  min-height: 52px;
+  padding: 16px 20px;
+
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.65);
+  color: #3b4a68;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+
+  box-shadow: 0 6px 18px rgba(70, 83, 107, 0.12);
+}
+
+.home-page .menu .button:hover {
+  background: #ffffff;
+}
+
+.home-page .menu .button:focus-visible {
+  outline: 3px solid #596fa5;
+  outline-offset: 4px;
+}
+
+/* Узкие экраны: кнопки в один столбик */
+@media (max-width: 600px) {
+  .home-page {
+    padding: 16px;
+  }
+
+  .home-page .container {
+    padding: 24px 0;
+  }
+
+  .home-page .menu {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .home-page .menu .button {
+    flex: 0 1 auto;
+    width: 100%;
+    max-width: none;
+  }
+}
 
 
